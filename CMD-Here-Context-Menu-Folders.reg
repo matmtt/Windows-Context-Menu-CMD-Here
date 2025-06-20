@@ -6,4 +6,4 @@ Windows Registry Editor Version 5.00
 "Icon"="cmd.exe"
 
 [HKEY_CLASSES_ROOT\Directory\Background\shell\cmdhere\command]
-@="powershell -Command \"Start-Process cmd -ArgumentList '/k cd /d \\\"%V\\\"' -Verb RunAs\""
+@="powershell -WindowStyle Hidden -Command \"Start-Process cmd -ArgumentList '/k cd /d \\\"%V\\\"' -Verb RunAs\""
