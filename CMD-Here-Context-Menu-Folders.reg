@@ -1,0 +1,9 @@
+Windows Registry Editor Version 5.00
+
+; Add "CMD here" to folder background context menu
+[HKEY_CLASSES_ROOT\Directory\Background\shell\cmdhere]
+@="CMD here"
+"Icon"="cmd.exe"
+
+[HKEY_CLASSES_ROOT\Directory\Background\shell\cmdhere\command]
+@="powershell -Command \"Start-Process cmd -ArgumentList '/k cd /d \\\"%V\\\"' -Verb RunAs\""
